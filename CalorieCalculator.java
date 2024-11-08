@@ -8,59 +8,62 @@ day3CalConsumed, day3CalBurned, day4CalConsumed, day4CalBurned,
 day5CalConsumed, day5CalBurned, day6CalConsumed, day6CalBurned,
 day7CalConsumed, day7CalBurned;
 
+static int totalCaloriesConsumed, totalCaloriesBurned;
+
+static double averageCaloriesConsumed, averageCaloriesBurned, netWeeklyPounds;
+
 //output daily questions and ask for user input
 public static void getUserInput() {
-    //get user input
 
     //Day 1
     System.out.println("Enter calories consumed for day #1:");
-    day1CalConsumed = input.nextString();
+    day1CalConsumed = input.nextInt();
 
     System.out.println("Enter calories burned for day #1:");
-    day1CalBurned = input.nextString();
+    day1CalBurned = input.nextInt();
 
     //Day 2
     System.out.println("Enter calories consumed for day #2:");
-    day2CalConsumed = input.nextString();
+    day2CalConsumed = input.nextInt();
 
     System.out.println("Enter calories burned for day #2:");
-    day2CalBurned = input.nextString();
+    day2CalBurned = input.nextInt();
 
     //Day 3
     System.out.println("Enter calories consumed for day #3:");
-    day3CalConsumed = input.nextString();
+    day3CalConsumed = input.nextInt();
 
     System.out.println("Enter calories burned for day #3:");
-    day3CalBurned = input.nextString();
+    day3CalBurned = input.nextInt();
 
 
     //Day 4
     System.out.println("Enter calories consumed for day #4:");
-    day4CalConsumed = input.nextString();
+    day4CalConsumed = input.nextInt();
 
     System.out.println("Enter calories burned for day #4:");
-    day4CalBurned = input.nextString();
+    day4CalBurned = input.nextInt();
 
     //Day 5
     System.out.println("Enter calories consumed for day #5:");
-    day5CalConsumed = input.nextString();
+    day5CalConsumed = input.nextInt();
 
     System.out.println("Enter calories burned for day #5:");
-    day5CalBurned = input.nextString();
+    day5CalBurned = input.nextInt();
 
     //Day 6
     System.out.println("Enter calories consumed for day #6:");
-    day6CalConsumed = input.nextString();
+    day6CalConsumed = input.nextInt();
     
     System.out.println("Enter calories burned for day #6:");
-    day6CalBurned = input.nextString();
+    day6CalBurned = input.nextInt();
 
     //Day 7
     System.out.println("Enter calories consumed for day #7:");
-    day7CalConsumed = input.nextString();
+    day7CalConsumed = input.nextInt();
 
     System.out.println("Enter calories burned for day #7:");
-    day7CalBurned = input.nextString();
+    day7CalBurned = input.nextInt();
 
 }
 
