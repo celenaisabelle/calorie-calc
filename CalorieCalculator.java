@@ -6,14 +6,27 @@ public class CalorieCalculator {
     static Scanner input = new Scanner(System.in);
 
     //globally declared integers
-    static int day1CalConsumed, day1CalBurned, day2CalConsumed, day2CalBurned,
-    day3CalConsumed, day3CalBurned, day4CalConsumed, day4CalBurned,
-    day5CalConsumed, day5CalBurned, day6CalConsumed, day6CalBurned,
-    day7CalConsumed, day7CalBurned;
+    static int day1CalConsumed;
+    static int day1CalBurned;
+    static int day2CalConsumed;
+    static int day2CalBurned;
+    static int day3CalConsumed;
+    static int day3CalBurned;
+    static int day4CalConsumed;
+    static int day4CalBurned;
+    static int day5CalConsumed;
+    static int day5CalBurned;
+    static int day6CalConsumed;
+    static int day6CalBurned;
+    static int day7CalConsumed;
+    static int day7CalBurned;
 
-    static int totalCaloriesConsumed, totalCaloriesBurned;
+    static int totalCaloriesConsumed;
+    static int totalCaloriesBurned;
 
-    static double averageCaloriesConsumed, averageCaloriesBurned, netWeeklyPounds;
+    static double averageCaloriesConsumed;
+    static double averageCaloriesBurned;
+    static double netWeeklyPounds;
 
     //output daily questions and ask for user input
     public static void getUserInput() {
@@ -66,11 +79,11 @@ public class CalorieCalculator {
 
         System.out.println("Enter calories burned for day #7:");
         day7CalBurned = input.nextInt();
-
-}
+    
+    }
 
     //method to calculate total amount of calories burned & consumed by week
-    public static double calculateCalories() {
+    public static void calculateCalories() {
 
         //sum of inputs for calories consumed
         totalCaloriesConsumed = day1CalConsumed + day2CalConsumed + day3CalConsumed + day4CalConsumed + day5CalConsumed + day6CalConsumed + day7CalConsumed;
@@ -78,13 +91,13 @@ public class CalorieCalculator {
         //sum of inputs for calories burned
         totalCaloriesBurned = day1CalBurned + day2CalBurned + day3CalBurned + day4CalBurned + day5CalBurned + day6CalBurned + day7CalBurned;
     
-
-}
+    
+    }
 
     //display calories calculated for the week to output
     public static void displayCalories() {
     //print calculated calories to output
-}
+    }
 
 
     //function main
