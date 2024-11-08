@@ -101,11 +101,19 @@ public class CalorieCalculator {
         System.out.println("You burned a total of " + totalCaloriesBurned + " calories this week.");
 
         //print averages to output
-        System.out.println("You consumed an average of " + averageCaloriesConsumed + " a day.");
-        System.out.println("You burned an average of " + averageCaloriesBurned + " a day.");
+        System.out.print("You consumed an average of ");
+        System.out.printf("%,.2f", averageCaloriesConsumed);
+        System.out.println(" calories a day.");
+
+        System.out.print("You burned an average of ");
+        System.out.printf("%,.2f", averageCaloriesBurned);
+        System.out.println(" calories a day.");
 
         //print weekly gain/loss
-        System.out.println("Your net weekly gain/loss were " + netWeeklyPounds + "pounds.");
+        System.out.print("Your net weekly gain/loss were ");
+        System.out.printf("%,.3f", netWeeklyPounds);
+        System.out.println(" pounds.");
+
     }
 
 
