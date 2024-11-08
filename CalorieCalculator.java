@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//Calories Calclulator class
+//Calculate calories consumed and burned per week, along with average per day.
 public class CalorieCalculator {
 
     //globally declared input method
@@ -106,6 +106,9 @@ public class CalorieCalculator {
         System.out.println("You consumed a total of " + totalCaloriesConsumed + " this week.");
         System.out.println("You burned a total of " + totalCaloriesBurned + " calories this week.");
 
+        //add new line
+        System.out.println();
+
         //print averages to output
         System.out.print("You consumed an average of ");
         System.out.printf("%,.2f", averageCaloriesConsumed);
@@ -114,6 +117,9 @@ public class CalorieCalculator {
         System.out.print("You burned an average of ");
         System.out.printf("%,.2f", averageCaloriesBurned);
         System.out.println(" calories a day.");
+
+        //add new line
+        System.out.println();
 
         //print weekly gain/loss
         System.out.print("Your net weekly gain/loss were ");
