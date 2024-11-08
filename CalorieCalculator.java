@@ -91,6 +91,12 @@ public class CalorieCalculator {
         //sum of inputs for calories burned
         totalCaloriesBurned = day1CalBurned + day2CalBurned + day3CalBurned + day4CalBurned + day5CalBurned + day6CalBurned + day7CalBurned;
 
+        //average calories consumed per day
+        averageCaloriesConsumed = totalCaloriesConsumed / 7.0;
+
+        //average calories burned per day
+        averageCaloriesBurned = totalCaloriesBurned / 7.0;
+
         netWeeklyPounds = (double)(totalCaloriesBurned - totalCaloriesConsumed) / 3000.0;
     }
 
