@@ -91,17 +91,21 @@ public class CalorieCalculator {
         //sum of inputs for calories burned
         totalCaloriesBurned = day1CalBurned + day2CalBurned + day3CalBurned + day4CalBurned + day5CalBurned + day6CalBurned + day7CalBurned;
 
-        netWeeklyPounds = (double)(totalCaloriesBurned - totalCaloriesConsumed) / 3000;
+        netWeeklyPounds = (double)(totalCaloriesBurned - totalCaloriesConsumed) / 3000.0;
     }
 
     //display calories calculated for the week to output
     public static void displayCalories() {
-        //print calculated calorie calculations to output
-        System.out.println("You consumed a total of " + totalCaloriesConsumed + ".");
-
+        //print calculated calorie calculation totals to output
+        System.out.println("You consumed a total of " + totalCaloriesConsumed + " this week.");
         System.out.println("You burned a total of " + totalCaloriesBurned + " calories this week.");
 
-        System.out.println("You burned an average of " + netWeeklyPounds + " pounds.");
+        //print averages to output
+        System.out.println("You consumed an average of " + averageCaloriesConsumed + " a day.");
+        System.out.println("You burned an average of " + averageCaloriesBurned + " a day.");
+
+        //print weekly gain/loss
+        System.out.println("Your net weekly gain/loss were " + netWeeklyPounds + "pounds.");
     }
 
 
